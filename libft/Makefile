@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+         #
+#    By: stoppery <stoppery@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/28 19:48:37 by dsherie           #+#    #+#              #
-#    Updated: 2020/10/28 20:46:59 by dsherie          ###   ########.fr        #
+#    Updated: 2020/10/28 22:58:17 by stoppery         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,14 @@ SRC_NAME=	ft_bzero.c   \
 		ft_strrchr.c \
 		ft_strnstr.c \
 		ft_strncmp.c \
+		ft_isalpha.c \
+		ft_isdigit.c \
+		ft_isalnum.c \
+		ft_isascii.c \
+		ft_isprint.c \
+		ft_isprint.c \
+		ft_toupper.c \
+		ft_tolower.c \
 
 OBJ_NAME = $(SRC_NAME:.c=.o)
 
