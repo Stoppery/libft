@@ -1,30 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/28 14:16:28 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/28 17:35:07 by dsherie          ###   ########.fr       */
+/*   Created: 2020/10/28 17:59:49 by dsherie           #+#    #+#             */
+/*   Updated: 2020/10/28 18:10:08 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t count)
+size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	unsigned char	*str1;
-	unsigned char	*str2;
-	size_t			i;
+	size_t	i;
+	size_t	j;
+	size_t	rsl;
 
-	str1 = (unsigned char *)dest;
-	str2 = (unsigned char *)src;
-	i = 0;
-	while (i < count)
+	i = ft_strlen(dst);
+	rsl = ft_strlen(src);
+	j = 0;
+	if (dstsize == 0)
+		return (rsl);
+	if (dstsize < i)
+		rsl += dstsize;
+	else
+		rsl += i;
+	while (src[j] != '\0' && i < dstsize - 1 && dst != src)
 	{
-		str1[i] = str2[i];
+		dst[i] = src[j];
+		j++;
 		i++;
 	}
-	return (dest);
+	dst[i] = '\0';
+	return (rsl);
 }

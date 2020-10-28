@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 14:31:27 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/28 15:13:02 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/10/28 17:32:21 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memccpy(void *dest, const void *src, int ch, size_t count)
 {
 	unsigned char	*str1;
 	unsigned char	*str2;
-	
-	size_t				i;
+	size_t			i;
+
 	str1 = (unsigned char *)dest;
 	str2 = (unsigned char *)src;
 	i = 0;
@@ -25,7 +25,7 @@ void	*ft_memccpy(void *dest, const void *src, int ch, size_t count)
 	{
 		str1[i] = str2[i];
 		if (str1[i] == (unsigned char)ch)
-			return &dest[++i];
+			return (&dest[++i]);
 		i++;
 	}
 	return (NULL);
