@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: stoppery <stoppery@student.42.fr>          +#+  +:+       +#+         #
+#    By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/28 19:48:37 by dsherie           #+#    #+#              #
-#    Updated: 2020/10/28 22:58:17 by stoppery         ###   ########.fr        #
+#    Updated: 2020/10/29 21:28:47 by dsherie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,8 @@ SRC_NAME=	ft_bzero.c   \
 		ft_isprint.c \
 		ft_toupper.c \
 		ft_tolower.c \
+		ft_isspace.c \
+		ft_atoi.c    \
 
 OBJ_NAME = $(SRC_NAME:.c=.o)
 
@@ -63,9 +65,3 @@ fclean: clean
 	@rm -f $(NAME)
 
 re: fclean all
-
-.PHONY: all, clean, fclean, re
-
-norme:
-	norminette $(SRC)
-	norminette $(INC_PATH)*.h

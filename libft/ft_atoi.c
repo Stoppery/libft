@@ -1,23 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/28 16:53:45 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/29 21:49:42 by dsherie          ###   ########.fr       */
+/*   Created: 2020/10/29 13:15:17 by dsherie           #+#    #+#             */
+/*   Updated: 2020/10/29 21:05:21 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_atoi(const char *str)
 {
+	size_t	b;
+	int		c;
 	size_t	i;
 
+	b = 0;
+	c = 0;
 	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	while (ft_isspace(*str))
+		str++;
+	c = (*str == '-') ? -1 : 1;
+	if (*str == '-' || *str == '+')
+		str++;
+	while (ft_isdigit(*str))
+	{
+		if (i++ > 18)
+		{
+			if (((*str - '0' > 7 && b == MAX) || b > MAX) && c == 1)
+				return (-1);
+			if (((*str - '0' > 8 && b == MAX) || b > MAX) && c == -1)
+				return (0);
+		}
+		b = b * 10 + *str++ - '0';
+	}
+	return (b * c);
 }

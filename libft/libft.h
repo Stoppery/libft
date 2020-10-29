@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: stoppery <stoppery@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 17:57:56 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/28 22:56:26 by stoppery         ###   ########.fr       */
+/*   Updated: 2020/10/29 21:49:11 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
+# define MAX 922337203685477580
 # include <string.h>
 
 void		ft_bzero(void *s, size_t n);
@@ -36,4 +36,7 @@ int			ft_isascii(int c);
 int			ft_isprint(int c);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
+int			ft_isspace(int c);
+int			ft_atoi(const char *str);
+
 #endif

@@ -6,10 +6,11 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 17:59:49 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/28 19:38:55 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/10/29 14:27:32 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 #include "libft.h"
 
 size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
