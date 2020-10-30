@@ -28,3 +28,5 @@
 		-	[x]	[Function ft_isprint](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_isprint.c) 
 		-	[x]	[Function ft_toupper](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_toupper.c) 
 		-	[x]	[Function ft_tolower](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_tolower.c) 
+		-	[ ]	[Function ft_calloc](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_calloc.c)
+		-	[ ]	[Function ft_strdup](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_strdup.c)
