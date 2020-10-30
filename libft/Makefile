@@ -6,7 +6,7 @@
 #    By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/28 19:48:37 by dsherie           #+#    #+#              #
-#    Updated: 2020/10/30 17:04:41 by dsherie          ###   ########.fr        #
+#    Updated: 2020/10/30 18:17:08 by dsherie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,7 @@ SRC_NAME=	ft_bzero.c   \
 		ft_atoi.c    \
 		ft_calloc.c  \
 		ft_strdup.c  \
+		ft_substr.c  \
 		
 OBJ_NAME = $(SRC_NAME:.c=.o)
 

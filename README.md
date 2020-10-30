@@ -4,6 +4,7 @@
 ## Repo contents
 
 1. [First task - Libft.](https://github.com/Stoppery/school_tasks/tree/master/libft)
+	<img src="https://github.com/Stoppery/pictures/blob/master/Screen%20Shot%202020-10-30%20at%206.19.04%20PM.png">
 	- [Header file](https://github.com/Stoppery/school_tasks/blob/master/libft/libft.h)
 	- [Part 1 - Libc functions](https://github.com/Stoppery/school_tasks/tree/master/libft)
 		-	[x]	[ft_memset](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_memset.c)  

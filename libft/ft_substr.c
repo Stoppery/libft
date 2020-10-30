@@ -1,26 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/30 16:57:32 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/30 18:18:35 by dsherie          ###   ########.fr       */
+/*   Created: 2020/10/30 18:16:04 by dsherie           #+#    #+#             */
+/*   Updated: 2020/10/30 18:16:45 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
-{
-	char	*result;
-	size_t	size;
-
-	size = ft_strlen(s1) + 1;
-	result = (char *)malloc(size);
-	if (!result)
-		return (0);
-	ft_strlcpy(result, s1, size);
-	return (result);
-}
+char	*ft_substr(char const *s, unsigned int start, size_t len);
