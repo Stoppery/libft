@@ -5,7 +5,7 @@
 
 1. First task - Libft.
 	- Part 1 - Libc Functions
-		-	[x]	[Function memset] (https://github.com/Stoppery/school_tasks/blob/master/libft/ft_memset.c)  
+		-	[x]	[Function memset](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_memset.c)  
 		-	[x]	Function bzero
 		-	[x]	Function memcpy  
 		-	[x]	Function memccpy
