@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/28 12:37:28 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/30 16:56:57 by dsherie          ###   ########.fr       */
+/*   Created: 2020/10/30 15:47:21 by dsherie           #+#    #+#             */
+/*   Updated: 2020/10/30 16:34:07 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *destination, int c, size_t amount)
+void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char	*start;
-	size_t			i;
+	void	*address;
 
-	start = destination;
-	i = 0;
-	while (i < amount)
-		start[i++] = (unsigned char)c;
-	return (start);
+	address = malloc(count * size);
+	if (address)
+		ft_bzero(address, (count * size));
+	return (address);
 }

@@ -6,7 +6,7 @@
 #    By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/28 19:48:37 by dsherie           #+#    #+#              #
-#    Updated: 2020/10/29 21:28:47 by dsherie          ###   ########.fr        #
+#    Updated: 2020/10/30 17:04:41 by dsherie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,9 @@ SRC_NAME=	ft_bzero.c   \
 		ft_tolower.c \
 		ft_isspace.c \
 		ft_atoi.c    \
-
+		ft_calloc.c  \
+		ft_strdup.c  \
+		
 OBJ_NAME = $(SRC_NAME:.c=.o)
 
 OBJ = $(addprefix $(OBJ_PATH), $(OBJ_NAME))

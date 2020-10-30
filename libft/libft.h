@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 17:57:56 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/30 14:06:13 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/10/30 17:04:13 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 # define MAX 922337203685477580
 # include <string.h>
+#include <stdlib.h>
 
 void		ft_bzero(void *s, size_t n);
 void		*ft_memset(void *b, int c, size_t len);
@@ -38,5 +39,7 @@ int			ft_toupper(int c);
 int			ft_tolower(int c);
 int			ft_isspace(int c);
 int			ft_atoi(const char *str);
+void		*ft_calloc(size_t count, size_t size);
+char		*ft_strdup(const char *s1);
 
 #endif

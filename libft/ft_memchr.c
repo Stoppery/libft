@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 16:02:13 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/28 20:26:06 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/10/30 16:22:36 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ void	*ft_memchr(const void *arr, int c, size_t n)
 	while (i < n)
 	{
 		if (str[i] == (unsigned char)c)
-		{
 			return (&str[i]);
-		}
 		i++;
 	}
 	return (NULL);
