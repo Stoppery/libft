@@ -1,1 +1,4 @@
-/libft-unit-test
+/libft-unit-test/
+.DS_Store
+/libft/objs
+/libft/libft.a
