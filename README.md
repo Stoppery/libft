@@ -3,8 +3,8 @@
 
 ## Оглавление репозитории
 
-1. First task - Libft.
-	- Part 1 - Libc Functions
+1. [First task - Libft.](https://github.com/Stoppery/school_tasks/tree/master/libft)
+	- [Part 1 - Libc Functions](https://github.com/Stoppery/school_tasks/tree/master/libft)
 		-	[x]	[Function ft_memset](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_memset.c)  
 		-	[x]	[Function ft_bzero](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_bzero.c) 
 		-	[x]	[Function ft_memcpy](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_memcpy.c)   
