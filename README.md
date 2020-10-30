@@ -4,6 +4,7 @@
 ## Repo contents
 
 1. [First task - Libft.](https://github.com/Stoppery/school_tasks/tree/master/libft)
+	- [Header file](https://github.com/Stoppery/school_tasks/blob/master/libft/libft.h)
 	- [Part 1 - Libc Functions](https://github.com/Stoppery/school_tasks/tree/master/libft)
 		-	[x]	[Function ft_memset](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_memset.c)  
 		-	[x]	[Function ft_bzero](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_bzero.c) 
