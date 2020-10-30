@@ -1,7 +1,7 @@
-# Данная репозитория была создана для моих проектов школы 21
+# This repo was made for school 42 tasks
 
 
-## Оглавление репозитории
+## Repo contents
 
 1. [First task - Libft.](https://github.com/Stoppery/school_tasks/tree/master/libft)
 	- [Part 1 - Libc Functions](https://github.com/Stoppery/school_tasks/tree/master/libft)
