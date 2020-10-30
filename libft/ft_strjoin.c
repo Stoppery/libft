@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 19:27:45 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/30 20:10:05 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/10/30 20:17:02 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		size_s1 = ft_strlen(s1);
 		size_s2 = ft_strlen(s2) + 1;
 		if (!(result = malloc(size_s1 + size_s2)))
-			return (0);
+			return (NULL);
 		while (++i < size_s1)
 			result[i] = s1[i];
 		while (++j < size_s2)
@@ -35,5 +35,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		result[i + j] = '\0';
 		return (result);
 	}
-	return (0);
+	return (NULL);
 }
