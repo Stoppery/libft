@@ -6,14 +6,14 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 17:57:56 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/30 17:04:13 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/10/30 18:07:23 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # define MAX 922337203685477580
-# include <string.h>
+
 #include <stdlib.h>
 
 void		ft_bzero(void *s, size_t n);
