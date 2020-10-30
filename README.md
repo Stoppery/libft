@@ -3,27 +3,27 @@
 
 ## Оглавление репозитории
 
-1. Первое задание - Libft.
-	- Part 1 - Libc functions
-		-	[x]	Func memset  
-		-	[x]	Func bzero
-		-	[x]	Func memcpy  
-		-	[x]	Func memccpy
-		-	[x]	Func memmove 
-		-	[x]	Func memchr
-		-	[x]	Func memcmp 
-		-	[x]	Func strlen 
-		-	[x]	Func strlcpy 
-		-	[x]	Func strlcat 
-		-	[x]	Func strchr
-		-	[x]	Func strrchr 
-		-	[x]	Func strnstr 
-		-	[x]	Func strncmp 
-		-	[x]	Func atoi
-		-	[x]	Func isalpha 
-		-	[x]	Func isdigit 
-		-	[x]	Func isalnum 
-		-	[x]	Func isascii 
-		-	[x]	Func isprint 
-		-	[x]	Func toupper 
-		-	[x]	Func tolower
+1. First task - Libft.
+	- Part 1 - Libc Functions
+		-	[x]	Function memset  
+		-	[x]	Function bzero
+		-	[x]	Function memcpy  
+		-	[x]	Function memccpy
+		-	[x]	Function memmove 
+		-	[x]	Function memchr
+		-	[x]	Function memcmp 
+		-	[x]	Function strlen 
+		-	[x]	Function strlcpy 
+		-	[x]	Function strlcat 
+		-	[x]	Function strchr
+		-	[x]	Function strrchr 
+		-	[x]	Function strnstr 
+		-	[x]	Function strncmp 
+		-	[x]	Function atoi
+		-	[x]	Function isalpha 
+		-	[x]	Function isdigit 
+		-	[x]	Function isalnum 
+		-	[x]	Function isascii 
+		-	[x]	Function isprint 
+		-	[x]	Function toupper 
+		-	[x]	Function tolower
