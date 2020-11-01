@@ -2,4 +2,4 @@
 .DS_Store
 /libft/objs
 /libft/libft.a
-/a.out
+a.out
