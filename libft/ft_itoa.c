@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/01 15:45:22 by dsherie           #+#    #+#             */
-/*   Updated: 2020/11/01 20:44:52 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/01 21:01:06 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,12 @@ char	*ft_itoa(int n1)
 	int		i;
 
 	n = n1;
-	minus = 1;
-	i = -1;
-	if (n < 0)
-	{
-		minus = -minus;
-		n = -n;
-		i = 0;
-	}
+	i = (n <= 0) ? 0 : -1;
+	minus = (n < 0) ? -1 : 1;
+	n = (n < 0) ? -n : n;
 	size = n;
 	if (!n)
-	{
-		i = 0;
 		n = 10;
-	}
 	while (size)
 	{
 		size = size / 10;
