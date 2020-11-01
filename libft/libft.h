@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 17:57:56 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/31 17:09:08 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/01 15:06:36 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,6 @@ int			ft_isascii(int c);
 int			ft_isprint(int c);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
-int			ft_isspace(int c);
 int			ft_atoi(const char *str);
 void		*ft_calloc(size_t count, size_t size);
 char		*ft_strdup(const char *s1);

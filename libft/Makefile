@@ -6,7 +6,7 @@
 #    By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/28 19:48:37 by dsherie           #+#    #+#              #
-#    Updated: 2020/10/31 21:26:42 by dsherie          ###   ########.fr        #
+#    Updated: 2020/11/01 15:04:50 by dsherie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,6 @@ SRC_NAME=	ft_bzero.c   \
 			ft_isprint.c \
 			ft_toupper.c \
 			ft_tolower.c \
-			ft_isspace.c \
 			ft_atoi.c    \
 			ft_calloc.c  \
 			ft_strdup.c  \

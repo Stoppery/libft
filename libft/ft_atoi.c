@@ -6,13 +6,22 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/29 13:15:17 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/29 21:05:21 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/01 15:07:16 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+static int	ft_isspace(int c)
+{
+	if (c == '\t' || c == '\n' || c == '\v' ||
+		c == '\f' || c == '\r' || c == ' ')
+		return (1);
+	else
+		return (0);
+}
+
+int			ft_atoi(const char *str)
 {
 	size_t	b;
 	int		c;
