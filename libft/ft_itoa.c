@@ -12,7 +12,16 @@
 
 #include "libft.h"
 
-char	*ft_itoa(int n1)
+static int	iteration(long size, int i)
+{
+	while (size)
+	{
+		size = size / 10;
+		i++;
+	}
+	return (i);
+}
+char		*ft_itoa(int n1)
 {
 	long	size;
 	long	n;
@@ -25,13 +34,8 @@ char	*ft_itoa(int n1)
 	minus = (n < 0) ? -1 : 1;
 	n = (n < 0) ? -n : n;
 	size = n;
-	if (!n)
-		n = 10;
-	while (size)
-	{
-		size = size / 10;
-		i++;
-	}
+	n = (!n) ? 10 : n;
+	i = iteration(size, i);
 	if (!(result = malloc(i + 2)))
 		return (NULL);
 	result[i + 1] = '\0';
