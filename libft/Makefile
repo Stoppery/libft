@@ -6,7 +6,7 @@
 #    By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/28 19:48:37 by dsherie           #+#    #+#              #
-#    Updated: 2020/11/01 16:38:23 by dsherie          ###   ########.fr        #
+#    Updated: 2020/11/01 19:11:29 by dsherie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ FLAG=-Wall -Wextra -Werror
 
 OBJ_PATH = ./objs/
 
-SRC_NAME=	ft_bzero.c   \
+SRC_NAME=	\
+			ft_bzero.c   \
 			ft_memccpy.c \
 			ft_memchr.c  \
 			ft_memcmp.c  \
