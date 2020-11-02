@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/01 15:45:22 by dsherie           #+#    #+#             */
-/*   Updated: 2020/11/01 21:01:06 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/02 14:45:37 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ static int	iteration(long size, int i)
 	}
 	return (i);
 }
+
 char		*ft_itoa(int n1)
 {
 	long	size;
