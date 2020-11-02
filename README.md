@@ -32,7 +32,7 @@
 		-	[x]	[ft_calloc](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_calloc.c)
 		-	[x]	[ft_strdup](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_strdup.c)
 	- [Part 2 - Additional fuctions](https://github.com/Stoppery/school_tasks/tree/master/libft)
-	<img src="https://github.com/Stoppery/pictures/blob/master/Снимок%20экрана%202020-11-02%20в%2023.42.18.png">
+	<img src="https://github.com/Stoppery/pictures/blob/master/part2.png">
 		- [x] [ft_substr](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_substr.c)
 		- [x] [ft_strjoin](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_strjoin.c)
 		- [x] [ft_strtrim](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_strtrim.c)
