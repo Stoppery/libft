@@ -20,7 +20,6 @@ void	*ft_calloc(size_t count, size_t size)
 	result_size = count * size;
 	if (!(address = malloc(result_size)))
 		return (NULL);
-	if (address)
-		ft_bzero(address, (result_size));
+	ft_bzero(address, (result_size));
 	return (address);
 }
