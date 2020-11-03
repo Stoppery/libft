@@ -22,28 +22,28 @@ static int	iteration(long size, int i)
 	return (i);
 }
 
-char		*ft_itoa(int n1)
+char		*ft_itoa(int n)
 {
 	long	size;
-	long	n;
+	long	n1;
 	int		minus;
 	char	*result;
 	int		i;
 
-	n = (long)n1;
-	i = (n <= 0) ? 0 : -1;
-	minus = (n < 0) ? -1 : 1;
-	n = (n < 0) ? -n : n;
-	size = n;
-	n = (!n) ? 10 : n;
+	n1 = (long)n;
+	i = (n1 <= 0) ? 0 : -1;
+	minus = (n1 < 0) ? -1 : 1;
+	n1 = (n1 < 0) ? -n1 : n1;
+	size = n1;
+	n1 = (!n1) ? 10 : n1;
 	i = iteration(size, i);
 	if (!(result = malloc(i + 2)))
 		return (NULL);
 	result[i + 1] = '\0';
-	while (n && i >= 0)
+	while (n1 && i >= 0)
 	{
-		result[i--] = n % 10 + '0';
-		n = n / 10;
+		result[i--] = n1 % 10 + '0';
+		n1 = n1 / 10;
 	}
 	if (minus < 0)
 		result[i] = '-';
