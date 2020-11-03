@@ -30,7 +30,7 @@ char		*ft_itoa(int n1)
 	char	*result;
 	int		i;
 
-	n = n1;
+	n = (long)n1;
 	i = (n <= 0) ? 0 : -1;
 	minus = (n < 0) ? -1 : 1;
 	n = (n < 0) ? -n : n;
