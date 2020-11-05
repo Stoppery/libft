@@ -39,7 +39,7 @@ static size_t	amount_str(char const *s, char c)
 static char		*make_str(char const *s, char c)
 {
 	char	*str;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	while (s[i] && s[i] != c)
@@ -70,7 +70,7 @@ char			**ft_split(char const *s, char c)
 	{
 		while (*s == c)
 			s++;
-		if (*s && *s != c)
+		if (*s)
 			if (!(arr[i++] = make_str(s, c)))
 				return (ft_clear(arr));
 		while (*s && *s != c)

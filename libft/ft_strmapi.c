@@ -21,9 +21,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result = NULL;
 	if (s && f)
 	{
-		if (!(result = (char *)malloc(ft_strlen((char *)s) + 1)))
+		if (!(result = (char *)malloc(ft_strlen(s) + 1)))
 			return (NULL);
-		while (++i < ft_strlen((char *)s))
+		while (++i < ft_strlen(s))
 			result[i] = f(i, s[i]);
 		result[i] = '\0';
 	}

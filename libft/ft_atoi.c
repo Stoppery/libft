@@ -37,7 +37,7 @@ int			ft_atoi(const char *str)
 		str++;
 	while (ft_isdigit(*str))
 	{
-		if (i++ > 18)
+		if (i++ > 17)
 		{
 			if (((*str - '0' > 7 && b == MAX) || b > MAX) && c == 1)
 				return (-1);
