@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 15:08:16 by dsherie           #+#    #+#             */
-/*   Updated: 2020/11/06 15:08:17 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/06 15:22:51 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,19 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*new_lst;
-	t_list	*new_elem;
+	t_list *copy_list;
+	t_list *cp_list;
 
-	if (!lst || !f)
-		return (NULL);
-	if (!(new_elem = ft_lstnew(f(lst->content))))
+	copy_list = NULL;
+	while (lst && f)
 	{
-		ft_lstclear(&lst, del);
-		return (NULL);
-	}
-	new_lst = new_elem;
-	lst = lst->next;
-	while (lst)
-	{
-		if (!(new_elem = ft_lstnew(f(lst->content))))
+		if (!(cp_list = ft_lstnew(f(lst->content))))
 		{
-			ft_lstclear(&lst, del);
-			ft_lstclear(&new_lst, del);
-			break ;
+			ft_lstclear(&copy_list, del);
+			return (NULL);
 		}
+		ft_lstadd_back(&copy_list, cp_list);
 		lst = lst->next;
-		ft_lstadd_back(&new_lst, new_elem);
 	}
-	return (new_lst);
+	return (copy_list);
 }
