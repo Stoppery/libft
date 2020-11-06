@@ -45,4 +45,4 @@
 		- [x] [ft_putnbr_fd](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_putnbr_fd.c)
 
 ### Result tests
-<img src="https://github.com/Stoppery/pictures/blob/master/Снимок%20экрана%202020-11-02%20в%2023.41.02.png">
+<img src="https://github.com/Stoppery/pictures/blob/master/Screen%20Shot%202020-11-06%20at%203.51.04%20PM.png">
