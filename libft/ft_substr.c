@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 18:16:04 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/30 20:56:07 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/06 16:05:03 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,23 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	char	*result;
+	char		*arr;
+	size_t		i;
 
-	i = -1;
-	if (!(result = malloc(len + 1)) || !s)
+	i = 0;
+	if (!s)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	if ((size_t)start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s) - (size_t)start)
+		len = ft_strlen(s) - (size_t)start;
+	if (!(arr = (char *)malloc(len + 1)))
+		return (NULL);
+	while (s[i] && i < len)
 	{
-		ft_bzero(result, len);
-		return (result);
+		arr[i] = s[(size_t)start + i];
+		i++;
 	}
-	while (++i < len)
-		result[i] = s[start + i];
-	result[i] = '\0';
-	return (result);
+	arr[i] = '\0';
+	return (arr);
 }

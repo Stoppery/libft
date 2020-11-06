@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 15:47:21 by dsherie           #+#    #+#             */
-/*   Updated: 2020/10/30 20:17:34 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/06 16:06:30 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*address;
-	size_t	result_size;
+	void	*arr;
 
-	result_size = count * size;
-	if (!(address = malloc(result_size)))
+	if (!size || !count)
+	{
+		size = 1;
+		count = 1;
+	}
+	if (!(arr = malloc(size * count)))
 		return (NULL);
-	ft_bzero(address, (result_size));
-	return (address);
+	ft_bzero(arr, size * count);
+	return (arr);
 }
