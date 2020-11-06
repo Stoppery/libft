@@ -6,7 +6,7 @@
 /*   By: dsherie <dsherie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 15:06:34 by dsherie           #+#    #+#             */
-/*   Updated: 2020/11/06 15:06:58 by dsherie          ###   ########.fr       */
+/*   Updated: 2020/11/06 15:28:34 by dsherie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,12 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *lst_elem;
-
 	if (!*lst)
 	{
 		*lst = new;
 		return ;
 	}
-	if (!new)
+	if (!new || !lst)
 		return ;
-	lst_elem = ft_lstlast(*lst);
-	lst_elem->next = new;
+	ft_lstlast(*lst)->next = new;
 }
