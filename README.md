@@ -43,6 +43,17 @@
 		- [x] [ft_putstr_fd](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_putstr_fd.c)
 		- [x] [ft_putendl_fd](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_putendl_fd.c)
 		- [x] [ft_putnbr_fd](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_putnbr_fd.c)
+	- [Part 2 - Bonus Part](https://github.com/Stoppery/school_tasks/tree/master/libft)
+		<img src="https://github.com/Stoppery/pictures/blob/master/bonus.png">
+		- [x] [ft_lstnew](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstnew.c)
+		- [x] [ft_lstadd_front](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstadd_front.c)
+		- [x] [ft_lstsize](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstsize.c)
+		- [x] [ft_lstlast](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstlast.c)
+		- [x] [ft_lstadd_back](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstadd_back.c)
+		- [x] [ft_lstdelone](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstdelone.c)
+		- [x] [ft_lstclear](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstclear.c)
+		- [x] [ft_lstiter](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstiter.c)
+		- [x] [ft_lstmap](https://github.com/Stoppery/school_tasks/blob/master/libft/ft_lstmap.c)
 
 ### Result tests
 <img src="https://github.com/Stoppery/pictures/blob/master/Screen%20Shot%202020-11-06%20at%203.51.04%20PM.png">
